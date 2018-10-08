@@ -1,37 +1,48 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
-  <meta charset="utf-8">
-  <title>Profile Viewer</title>
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-  <h1>Profile viewer</h1>
-  <p id="login">
-    You are not logged in.
-    <button class="button">Log in</button>
-  </p>
-  <p id="logout">
-    You are logged in as <span id="user"></span>.
-    <button class="button">Log out</button>
-  </p>
-  <p>
-    <label for="profile">Profile:</label>
-    <input id="profile">
-    <button id="view">View</button>
-  </p>
-  <dl id="viewer">
-    <dt>Full name</dt>
-    <dd id="fullName"></dd>
-    <dt>Friends</dt>
-    <dd>
-      <ul id="friends"></ul>
-    </dd>
-  </dl>
-  <script src="scripts/jquery.js"></script>
-  <script src="scripts/solid-auth-client.bundle.js"></script>
-  <script src="scripts/rdflib.min.js"></script>
-  <script src="scripts/main.js"></script>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Profile VIewer
+      </h1>
+
+
+      <p id="login">
+        You are not logged in.
+        <button class="button">Log in</button>
+      </p>
+      <p id="logout">
+        You are logged in as <span id="user"></span>.
+        <button class="button">Log out</button>
+      </p>
+      <p>
+        <label for="profile">Profile:</label>
+        <input id="profile">
+        <button id="view">View</button>
+      </p>
+      <dl id="viewer">
+        <dt>Full name</dt>
+        <dd id="fullName"></dd>
+        <dt>Friends</dt>
+        <dd>
+          <ul id="friends"></ul>
+        </dd>
+      </dl>
+
+      <script src="scripts/jquery.js"></script>
+      <script src="scripts/solid-auth-client.bundle.js"></script>
+      <script src="scripts/rdflib.min.js"></script>
+      <script src="scripts/main.js"></script>
+
+    </div>
+  </section>
+  </body>
 </html>
